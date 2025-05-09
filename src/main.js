@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import ComputerPreScene from "./scenes/computerPreScene";
 
 export class mainScene extends Phaser.Scene {
   constructor() {
@@ -39,7 +40,7 @@ function startGame() {
       },
     },
 
-    scene: [],
+    scene: [ComputerPreScene],
   };
   const game = new Phaser.Game(config);
 }
